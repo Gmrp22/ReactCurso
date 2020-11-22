@@ -10,11 +10,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const element = <h1>Hello, Platzi </h1>; //crear elementos
+//const element = <h1>Hello, Platzi </h1>; //crear elementos
+
+//alternativa
+//const element = React.createElement("a", {href:'https://principal.url.edu.gt/'}, "Hola soy children");
+
+//{} props o properties
+//(elementocrear, atreibutos, children(innertext o innerhtml))
 //<h1> es jsx entonces se importa react
+import Badge from './components/badge'
+
 
 const container = document.getElementById("app");
 
 // ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(element, container); // analogo append child render
-//a render se le pasa que se quiere renderizar y container donde (que,donde)
+ReactDOM.render(<Badge/>, container); 
+
+//react dom se da siempre un elemento, con closing tag
+//si no tiene <> es componentene
