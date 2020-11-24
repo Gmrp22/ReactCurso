@@ -7,11 +7,11 @@ class BadgeForm extends Component {
     console.log("Button was clicked");
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form was submitted");
-    console.log(this.state);
-  };
+  // handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form was submitted");
+  //   console.log(this.state);
+  // };
 
   render() {
     return (
@@ -75,7 +75,7 @@ class BadgeForm extends Component {
             />
           </div>
 
-          <button onClick={this.handleClick()} className="btn btn-primary">
+          <button onClick={this.props.onSubmit} className="btn btn-primary">
             Save
           </button>
         </form>
